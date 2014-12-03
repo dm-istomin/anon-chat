@@ -1,3 +1,3 @@
 get '/' do
-  erb :welcome
+  redirect('/chat')
 end

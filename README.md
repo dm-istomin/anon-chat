@@ -1,24 +1,15 @@
-> **Note**: This branch (master) contains a skeleton without any app code, perfect for creating a _new_ application or challenge. If you're looking for an example app built with this skeleton, take a look at the [example](/../..//tree/example) branch which includes basic CRUD and RSpec tests.
+### To-do List
 
-### About
+**MVP**
 
-This is a tweaked copy of the original Sinatra skeleton made by zencephalon, which can be found [here](https://github.com/zencephalon/sinatra-mvc-skeleton). I've made a couple of alterations, mostly adding in personal CSS styling and including some code for user authentication by default.
+- [ ] Global chatroom.
+- [ ] Users with aliases.
+- [ ] Users can choose to reveal their permanent name to certain people.
 
-### Purpose
-The Sinatra Skeleton:
+**Additions**
 
-1. Provides a foundation for building challenges or creating a new Sinatra application.
-2. Demonstrates a reasonable set of practices around building Sinatra applications.
-3. Eases the transition to Rails for Dev Bootcamp students
-
-### Quickstart
-
-1.  `bundle install`
-2.  `shotgun config.ru`
-
-As needed, create models & migrations with the `rake` tasks:
-
-```
-rake generate:migration  # Create an empty migration in db/migrate, e.g., rake generate:migration NAME=create_tasks
-rake generate:model      # Create an empty model in app/models, e.g., rake generate:model NAME=User
-```
+- [ ] Efficient server queries.
+- [ ] Private messaging.
+- [ ] Multiple rooms.
+- [ ] XSS/code injection protection, escaping user input.
+- [ ] Decent CSS.
