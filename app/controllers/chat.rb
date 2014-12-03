@@ -3,6 +3,11 @@ get '/chat' do
   erb :'chat/chatroom'
 end
 
+get '/chat/instant' do
+  @messages = Message.last(100)
+  erb :'chat/_chatbox', locals: { messages: @messages }, layout: !request.xhr
+end
+
 post '/message/new' do
   text = params[:message]
   user = User.find(session[:user_id])
@@ -15,4 +20,8 @@ post '/message/new' do
     session[:error] = new_message.errors.messages
     redirect('/chat')
   end
+end
+
+post '/message/instant/new' do
+  #..
 end
