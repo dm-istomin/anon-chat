@@ -1,1 +1,7 @@
-Hello.
+<div id="chatbox">
+<%=  erb :'chat/_chatbox', locals: { messages: @messages }, layout: false %>
+</div>
+
+<div id="user-input">
+  <%= erb :'chat/_userinput', layout: false %>
+</div>
