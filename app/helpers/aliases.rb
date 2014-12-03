@@ -5,8 +5,21 @@ def generate_alias
 end
 
 def set_alias(user)
-  user.alias = generate_alias
+  new_alias = generate_alias
+  i = 0
+
+  while User.pluck(:alias).include?(new_alias) && i < 1000
+    new_alias = generate_alias
+    i += 1
+  end
+
+  if i < 1000
+    user.alias = new_alias
+  else
+    user.alias = "Grumpy Squid"
+  end
   user.save
+    
 end
 
 def unset_alias(user)

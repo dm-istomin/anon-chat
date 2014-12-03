@@ -1,5 +1,6 @@
 get '/logout' do
   session[:user_id] = nil
+  unset_alias(user)
   redirect ('/login')
 end
 
@@ -12,6 +13,7 @@ post '/login' do
 
   if user.try(:authenticate, params[:password])
     session[:user_id] = user.id
+    set_alias(user)
     redirect('/')
   else
     session[:errors] = "Invalid login"
