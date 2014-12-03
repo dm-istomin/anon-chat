@@ -4,4 +4,10 @@ class User < ActiveRecord::Base
   has_many :messages
   has_many :invitations
 
+  after_initialize :default
+
+  def default
+    self.fixed_identity = false if self.fixed_identity == nil
+  end
+
 end

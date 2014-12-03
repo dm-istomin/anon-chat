@@ -7,7 +7,7 @@ end
 def set_alias(user)
   new_alias = generate_alias
   i = 0
-  
+
   while User.pluck(:alias).include?(new_alias) && i < 200
     new_alias = generate_alias
     i += 1
@@ -25,4 +25,12 @@ end
 def unset_alias(user)
   user.alias = nil
   user.save
+end
+
+def alias_or_permanent_name(user)
+  if user.fixed_identity
+    user.permanent_name
+  else
+    user.alias || set_alias(user)
+  end
 end
