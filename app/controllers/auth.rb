@@ -19,11 +19,11 @@ post '/login' do
   end
 end
 
-get '/signup' do
-  erb :signup
+get '/register' do
+  erb :register
 end
 
-post '/signup' do
+post '/register' do
   new_user = User.new(params[:user])
   if new_user.save
     session[:user_id] = new_user.id
