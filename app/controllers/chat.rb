@@ -1,10 +1,11 @@
 get '/chat' do
-  @messages = Message.last(100)
+  @messages = Message.all
   erb :'chat/chatroom'
 end
 
-get '/chat/latest/:id' do |id|
-  messages = Message.where('id > ?', id.to_i)
+get '/chat/instant/:id' do |id|
+
+  messages = Message.where('id > ?', id)
   content = erb :'chat/_chatbox', locals: { messages: messages }, layout: false
 
   if messages.empty?
