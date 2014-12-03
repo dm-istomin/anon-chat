@@ -1,4 +1,4 @@
 get '/chat' do
-  @messages = Message.all
+  @messages = Message.last(100)
   erb :'chat/chatroom'
 end
