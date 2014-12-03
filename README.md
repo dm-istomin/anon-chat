@@ -3,7 +3,7 @@
 **MVP**
 
 - [X] Global chatroom.
-- [ ] Users with aliases.
+- [X] Users with aliases.
 - [ ] Users can choose to reveal their permanent name to certain people.
 
 **Additions**

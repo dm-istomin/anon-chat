@@ -7,7 +7,7 @@ end
 def set_alias(user)
   new_alias = generate_alias
   i = 0
-
+  
   while User.pluck(:alias).include?(new_alias) && i < 200
     new_alias = generate_alias
     i += 1
