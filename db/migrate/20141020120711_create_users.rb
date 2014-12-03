@@ -4,6 +4,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :alias
       t.string :permanent_name
       t.string :password_digest
+      t.datetime :last_login
     end
   end
 end

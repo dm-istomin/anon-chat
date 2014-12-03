@@ -29,6 +29,7 @@ post '/register' do
   new_user = User.new(params[:user])
   if new_user.save
     session[:user_id] = new_user.id
+    set_alias(new_user)
     redirect('/')
   else
     redirect('/asdfasdfsad')
