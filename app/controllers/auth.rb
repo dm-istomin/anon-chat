@@ -4,7 +4,7 @@ get '/logout' do
 end
 
 get '/login' do
-  erb :login
+  erb :'auth/login'
 end
 
 post '/login' do
@@ -20,7 +20,7 @@ post '/login' do
 end
 
 get '/register' do
-  erb :register
+  erb :'auth/register'
 end
 
 post '/register' do
