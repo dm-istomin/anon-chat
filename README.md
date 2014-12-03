@@ -9,6 +9,8 @@
 **Additions**
 
 - [ ] Efficient server queries.
+- [ ] Invitation through a referral code.
+- [ ] Show the number of users that are logged in.
 - [ ] Private messaging.
 - [ ] Multiple rooms.
 - [ ] XSS/code injection protection, escaping user input.
