@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   var $chatbox = $('#chatbox');
-  var $form = $('#user-input form')
+  var $form = $('#user-input form');
 
   var refreshRate = 1000;
   var latestMessageIndex = 0;
@@ -30,8 +30,7 @@ $(document).ready(function() {
           checkUpdate();
         },
         error: function(response) {
-          alert("ERROR" + response);
-          window.location.href = '/chat'
+          window.location.href = '/chat';
         }
       });
 
