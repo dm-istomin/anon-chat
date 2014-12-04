@@ -1,9 +1,9 @@
 <p id="identity-status"> Your identity is currently <%= identity_state(User.find(session[:user_id])) %></p>
 
 <form id="reveal-identity" action="/user/identity/reveal" method="POST">
-  <div><input id="identity-reveal" type="submit" value="Reveal"></div>
+  <div><input id="identity-reveal" type="submit" class="minimal" value="Reveal"></div>
 </form>
 
 <form id="hide-identity"action="/user/identity/hide" method="POST">
-  <div><input id="identity-hide" type="submit" value="Hide"></div>
+  <div><input id="identity-hide" class= "minimal" type="submit" value="Hide"></div>
 </form>
