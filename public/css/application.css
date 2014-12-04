@@ -1,8 +1,8 @@
-.container {
-  margin: 20px auto;
-  width: 600px;
-  padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+#content {
+  margin: 2em auto;
+  width: 80%;
+  padding: 20px 20px 20px 20px;
+  border: 1px solid black;
 }
 
 th {
@@ -25,6 +25,29 @@ th {
   color: #bd4932;
   font-weight: bold;
 }
+
+#user-message {
+  display: inline;
+  word-wrap: break-word;
+}
+
+#text-box {
+  width: 41em;
+  border:1px solid #ACD8F0;
+  margin-left: 24.25%;
+  margin-right: 24%;
+  text-align: center;
+}
+
+#identity-status {
+  text-align: center;
+  color: #105b63;
+}
+
+#user-identity {
+  text-align: center;
+}
+
 
 
 /* Buttons taken from here: http://cssdeck.com/labs/css3-buttons-set-simple-markup */
@@ -62,6 +85,8 @@ th {
     color: #000; }
 
 .nav-green {
+  display: block;
+  margin-top: 1em;
   background-color: #7fbf4d;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7fbf4d), color-stop(100%, #63a62f));
   background-image: -webkit-linear-gradient(top, #7fbf4d, #63a62f);
@@ -104,3 +129,63 @@ th {
     -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
     -moz-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
     box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee; }
+
+#message-submit-button {
+  margin-left: 45%;
+  margin-right: 45%;
+  background-color: #52a8e8;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #52a8e8), color-stop(100%, #377ad0));
+  background-image: -webkit-linear-gradient(top, #52a8e8, #377ad0);
+  background-image: -moz-linear-gradient(top, #52a8e8, #377ad0);
+  background-image: -ms-linear-gradient(top, #52a8e8, #377ad0);
+  background-image: -o-linear-gradient(top, #52a8e8, #377ad0);
+  background-image: linear-gradient(top, #52a8e8, #377ad0);
+  border-top: 1px solid #4081af;
+  border-right: 1px solid #2e69a3;
+  border-bottom: 1px solid #20559a;
+  border-left: 1px solid #2e69a3;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  -webkit-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+  -moz-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+  box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+  color: #fff;
+  font: normal 11px "lucida grande", sans-serif;
+  line-height: 1;
+  padding: 3px 5px;
+  text-align: center;
+  text-shadow: 0 -1px 1px #3275bc;
+  width: 112px;
+  -webkit-background-clip: padding-box; }
+  #message-submit-button:hover {
+    background-color: #3e9ee5;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3e9ee5), color-stop(100%, #206bcb));
+    background-image: -webkit-linear-gradient(top, #3e9ee5 0%, #206bcb 100%);
+    background-image: -moz-linear-gradient(top, #3e9ee5 0%, #206bcb 100%);
+    background-image: -ms-linear-gradient(top, #3e9ee5 0%, #206bcb 100%);
+    background-image: -o-linear-gradient(top, #3e9ee5 0%, #206bcb 100%);
+    background-image: linear-gradient(top, #3e9ee5 0%, #206bcb 100%);
+    border-top: 1px solid #2a73a6;
+    border-right: 1px solid #165899;
+    border-bottom: 1px solid #07428f;
+    border-left: 1px solid #165899;
+    -webkit-box-shadow: inset 0 1px 0 0 #62b1e9;
+    -moz-box-shadow: inset 0 1px 0 0 #62b1e9;
+    box-shadow: inset 0 1px 0 0 #62b1e9;
+    cursor: pointer;
+    text-shadow: 0 -1px 1px #1d62ab;
+    -webkit-background-clip: padding-box; }
+  #message-submit-button:active {
+    background: #3282d3;
+    border: 1px solid #154c8c;
+    border-bottom: 1px solid #0e408e;
+    -webkit-box-shadow: inset 0 0 6px 3px #1657b5, 0 1px 0 0 white;
+    -moz-box-shadow: inset 0 0 6px 3px #1657b5, 0 1px 0 0 white;
+    box-shadow: inset 0 0 6px 3px #1657b5, 0 1px 0 0 white;
+    text-shadow: 0 -1px 1px #2361a4;
+    -webkit-background-clip: padding-box; }
+
+#message-submit-button::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
