@@ -50,7 +50,7 @@ $(document).ready(function() {
     $.ajax({
       url: $target.attr('action'),
       method: $target.attr('method'),
-      data: $target.serialize(),
+      data: $target.serialize()
     }).done(function() {
       $textBox.val('');
       $submitButton.val('Send')

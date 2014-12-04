@@ -34,3 +34,8 @@ def alias_or_permanent_name(user)
     user.alias || set_alias(user)
   end
 end
+
+def identity_state(user)
+  return "Visible" if user.fixed_identity
+  return "Hidden" if !user.fixed_identity
+end
