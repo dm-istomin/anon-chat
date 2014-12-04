@@ -5,8 +5,9 @@ function updateAll() {
     dataType: "JSON",
     success: function(response) {
       if (response) {
+        console.log(response);
         $('#chatbox').html(response['content']);
-        latestMessageIndex = response['latest_id']
+        latestMessageIndex = response['latest_id'];
       };
     },
     error: function(response) {

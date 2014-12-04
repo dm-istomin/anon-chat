@@ -4,8 +4,9 @@ class User < ActiveRecord::Base
   has_many :messages
   has_many :invitations
 
-  validates :password, confirmation: true, presence: true
-  validates :permanent_name, uniqueness: true, presence: true
+  validates :password, confirmation: true
+  validates :permanent_name, uniqueness: true
+  validates :permanent_name, presence: true
 
   after_initialize :default
 

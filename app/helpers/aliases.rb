@@ -36,6 +36,6 @@ def alias_or_permanent_name(user)
 end
 
 def identity_state(user)
-  return "Visible" if user.fixed_identity
-  return "Hidden" if !user.fixed_identity
+  return "Visible" if user.fixed_identity == true
+  return "Hidden" if user.fixed_identity == false
 end

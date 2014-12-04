@@ -16,6 +16,7 @@ $(document).ready(function() {
       }).done(function(response) {
         var status = $.parseHTML(response);
         $('#identity-status').html(status[0]);
+        console.log(status[0]);
         updateAll();
       });
     });
