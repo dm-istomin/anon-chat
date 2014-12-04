@@ -4,12 +4,11 @@
 
 - [X] Global chatroom.
 - [X] Users with aliases.
-- [ ] Users can choose to reveal their permanent name to certain people.
+- [X] Users can choose to reveal their permanent name.
 
 **Additions**
 
 - [X] Efficient server queries.
-- [ ] Invitation through a referral code.
 - [ ] Show the number of users that are logged in.
 - [ ] Private messaging.
 - [ ] Multiple rooms.
