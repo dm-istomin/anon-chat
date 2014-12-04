@@ -16,10 +16,12 @@ $(document).ready(function() {
       }).done(function(response) {
         var status = $.parseHTML(response);
         $('#identity-status').html(status[0]);
+        updateAll();
       });
     });
 
   }
+
 
   updateForm($reveal);
   updateForm($hide);

@@ -6,7 +6,6 @@ $(document).ready(function() {
   var refreshRate = 1000;
   var latestMessageIndex = 0;
 
-
   function checkUpdate() {
     setTimeout(function() {
       console.log('checking update...');

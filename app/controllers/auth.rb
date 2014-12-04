@@ -1,6 +1,6 @@
 get '/logout' do
+  unset_alias(User.find(session[:user_id]))
   session[:user_id] = nil
-  unset_alias(user)
   redirect ('/login')
 end
 
