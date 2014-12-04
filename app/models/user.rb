@@ -4,6 +4,9 @@ class User < ActiveRecord::Base
   has_many :messages
   has_many :invitations
 
+  validates :password, confirmation: true, presence: true
+  validates :permanent_name, uniqueness: true, presence: true
+
   after_initialize :default
 
   def default

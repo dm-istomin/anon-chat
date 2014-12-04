@@ -16,7 +16,7 @@ post '/login' do
     set_alias(user)
     redirect('/')
   else
-    session[:errors] = "Invalid login"
+    session[:errors] = "Invalid login info"
     redirect('/login')
   end
 end
@@ -32,6 +32,7 @@ post '/register' do
     set_alias(new_user)
     redirect('/')
   else
-    redirect('/asdfasdfsad')
+    session[:errors] = new_user.errors.messages
+    redirect('/register')
   end
 end
