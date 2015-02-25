@@ -3,7 +3,7 @@ $(document).ready(function() {
   var $chatbox = $('#chatbox');
   var $form = $('#user-input form');
 
-  var refreshRate = 1000;
+  var refreshRate = 500;
   var latestMessageIndex = 0;
 
   function checkUpdate() {

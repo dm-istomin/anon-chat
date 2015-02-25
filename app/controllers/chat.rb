@@ -4,7 +4,6 @@ get '/chat' do
 end
 
 get '/chat/instant/:id' do |id|
-
   messages = Message.where('id > ?', id)
   content = erb :'chat/_chatbox', locals: { messages: messages }, layout: false
 
@@ -27,8 +26,4 @@ post '/message/new' do
     session[:error] = new_message.errors.messages
     redirect('/chat')
   end
-end
-
-post '/message/instant/new' do
-  #..
 end
