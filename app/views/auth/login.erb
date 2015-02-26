@@ -1,12 +1,14 @@
 <%= display_errors %>
-<h1>Log In</h1>
-<form id="form_id" action="/login" method="POST">
-  <h2>Permanent Username</h2>
-  <input type="text" name="permanent_name">
-  <h2>Password</h2>
-  <input type="password" name="password">
-  <input class="nav-green" type="submit" value="Log In">
-</form>
-<span>
-<p>If you're not an existing user, you can <a href="/register">Register</a> here.</p>
-</span>
+<div class="logo login-logo">
+  <i class="fa fa-user-secret"></i>
+  <h1 class="logo-name"><span class="bold">ANON</span>Chat</h1>
+</div>
+<div class="login-form">
+  <form id="form_id" action="/login" method="POST">
+    <input type="text" name="permanent_name" placeholder="Username">
+    <input type="password" name="password" placeholder="Password">
+    <input type="submit" value="Log In">
+    <a class="register-link" href="/register">Need an account?</a>
+  </form>
+  </span>
+</div>
