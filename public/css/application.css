@@ -1,0 +1,35 @@
+/*
+Color Scheme
+===========
+purple: #4C1B33;
+pale yellow: #EFE672;
+green: #98A942;
+aqua: #2D6960;
+greenish-black: #141D14;
+*/
+
+html, body, .container {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  background-color: grey;
+  text-align: center;
+}
+
+.login-logo {
+  padding-top: 5%;
+  color: white;
+  font-size: 12rem;
+}
+
+.logo-name {
+  color: white;
+  font-family: 'Josefin Slab';
+  font-size: 4rem;
+}
+
+.bold {
+  font-weight: 700;
+}
