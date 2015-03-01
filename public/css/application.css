@@ -20,17 +20,60 @@ html, body, .container {
 }
 
 .login-logo {
-  padding-top: 5%;
+  padding-top: 25%;
   color: white;
-  font-size: 12rem;
+  font-size: 8rem;
 }
 
 .logo-name {
   color: white;
   font-family: 'Josefin Slab';
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .bold {
   font-weight: 700;
+}
+
+.login-form {
+  width: 90%;
+  padding-top: 17.5%;
+  margin: 0 auto;
+}
+.minimalist-input {
+  display: block;
+  width: 100%;
+}
+
+.minimalist-input input {
+  width: 85%;
+  background-color: grey;
+  outline: none;
+  border: 0;
+  border-bottom: .2rem solid red;
+  font-size: 1.25rem;
+}
+
+.minimalist-input i {
+  color: white;
+  margin-right: 3%;
+  font-size: 1.5rem;
+}
+
+.primary-button {
+  color: white;
+  background-color: red;
+  border: 0;
+  margin: 10% auto 0 auto;
+  font-size: 1.25rem;
+  padding: .5rem 3rem .5rem 3rem;
+  display: block;
+}
+
+.register-link {
+  padding-top: 3%;
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
 }
