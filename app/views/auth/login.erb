@@ -5,10 +5,12 @@
 </div>
 <div class="login-form">
   <form id="form_id" action="/login" method="POST">
-    <input type="text" name="permanent_name" placeholder="Username">
-    <input type="password" name="password" placeholder="Password">
-    <input type="submit" value="Log In">
-    <a class="register-link" href="/register">Need an account?</a>
+    <div class="minimalist-input">
+      <i class="fa fa-user user-icon"></i><input type="text" name="permanent_name" placeholder="Username">
+    </div>
+    <div class="minimalist-input">
+      <i class="fa fa-unlock-alt password-icon"></i><input type="password" name="password" placeholder="Password">    </div>
+    <input class="primary-button" type="submit" value="Log In">
   </form>
-  </span>
 </div>
+<a class="register-link" href="/register">Don't have an account? Register here.</a>
